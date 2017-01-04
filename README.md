@@ -1,6 +1,6 @@
 # vue-webpack-boilerplate
 
-> A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
+> Fork from webpack template, and to add vue-router, vuex and router-vuex-sync. This is a template for VueJS SPA
 
 > This template is Vue 2.0 compatible. For Vue 1.x use this command: `vue init webpack#1.0 my-project`
 
@@ -15,7 +15,7 @@ This is a project template for [vue-cli](https://github.com/vuejs/vue-cli). **It
 
 ``` bash
 $ npm install -g vue-cli
-$ vue init webpack my-project
+$ vue init dolphinlin/VueSPA my-project
 $ cd my-project
 $ npm install
 $ npm run dev
