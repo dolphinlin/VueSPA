@@ -8,7 +8,7 @@ const Bar = {
   template: '<div>bar</div>'{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
 }
 
-export default routes = [
+export default [
   {
     path: '/',
     name: 'index',
@@ -20,7 +20,7 @@ export default routes = [
     path: '/bar',
     component: Bar{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
   }, {
-    path: '/store',
+    path: '/state',
     component: State{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
   }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
 ]

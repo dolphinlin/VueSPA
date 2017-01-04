@@ -10,7 +10,6 @@ import routes from './routes'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 import App from './App'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 Vue.use(VueRouter){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-Vue.use(Vuex){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 const router = new VueRouter({
   mode: 'history',
@@ -25,5 +24,8 @@ new Vue({
   render: h => h(App){{#if_eq lintConfig "airbnb"}},{{/if_eq}}
   {{/if_eq}}
   {{#if_eq build "standalone"}}
+  router,
+  store,
+  render: h => h(App){{#if_eq lintConfig "airbnb"}},{{/if_eq}}
   {{/if_eq}}
 }).$mount('#app'){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
