@@ -16,7 +16,9 @@
         State
       </router-link>
     </p>
-
+    <h1>
+      Now Router => {{routerPath}}
+    </h1>
     <router-view></router-view>
     <!-- vouter-view will be rendered -->
   </div>
@@ -24,7 +26,15 @@
 
 <script>
 export default {
-  name: 'app'{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+  name: 'app',
+  computed: {
+    routerPath () {
+      return this.$store.state.route.path{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+    }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+    // current path (string)
+    // current params (object)
+    // current query (object)
+  }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
 }{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 </script>
 
