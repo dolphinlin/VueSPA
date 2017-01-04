@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <p>      
-      <router-link to="/" exact>
+    <p>
+      <router-link to="/" active-class="active" exact>
         <!-- router-link's exact will only be active at '/'  -->
         Home
       </router-link>
